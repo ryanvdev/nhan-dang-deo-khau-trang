@@ -1,0 +1,23 @@
+{
+    "name": "nhan-dang-deo-khau-trang",
+    "version": "1.0.0",
+    "description": "",
+    "main": "main.py",
+    "scripts": {
+        "start": "python src/main.py",
+        "dataset": "python src/viewdataset.py",
+        "splitData": "python src/split_dataset.py",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://gitlab.com/tuannguyen7326/nhan-dang-deo-khau-trang.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://gitlab.com/tuannguyen7326/nhan-dang-deo-khau-trang/issues"
+    },
+    "homepage": "https://gitlab.com/tuannguyen7326/nhan-dang-deo-khau-trang#readme"
+}

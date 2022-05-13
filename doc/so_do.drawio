@@ -1,0 +1,176 @@
+<mxfile host="65bd71144e">
+    <diagram id="4Z23DklqA2f3uH5m0aEv" name="Page-1">
+        <mxGraphModel dx="3913" dy="2430" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1654" pageHeight="1169" background="#1A1A1A" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Khởi tạo đối tượng lưu ảnh (&lt;span style=&quot;background-color: rgb(30, 30, 30); font-family: consolas, &amp;quot;courier new&amp;quot;, monospace; font-size: 14px;&quot;&gt;SaveImages&lt;/span&gt;&lt;span&gt;)&lt;/span&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fontColor=#FFFFFF;fillColor=#333333;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="60" width="230" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Khởi tạo trình phát âm thanh (&lt;span style=&quot;background-color: rgb(30, 30, 30); font-family: consolas, &amp;quot;courier new&amp;quot;, monospace; font-size: 14px;&quot;&gt;AudioPlayer&lt;/span&gt;&lt;span&gt;)&lt;/span&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fontColor=#FFFFFF;fillColor=#333333;" parent="1" vertex="1">
+                    <mxGeometry x="420" y="60" width="230" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Khởi tạo trình phát hiện khuôn mặt (&lt;span style=&quot;background-color: rgb(30, 30, 30); font-family: consolas, &amp;quot;courier new&amp;quot;, monospace; font-size: 14px;&quot;&gt;FaceDetector&lt;/span&gt;&lt;span&gt;)&lt;/span&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fontColor=#FFFFFF;fillColor=#333333;" parent="1" vertex="1">
+                    <mxGeometry x="712" y="60" width="230" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Khởi tạo trình dự đoán có khẩu trang (&lt;span style=&quot;background-color: rgb(30, 30, 30); font-family: consolas, &amp;quot;courier new&amp;quot;, monospace; font-size: 14px;&quot;&gt;maskPredictor&lt;/span&gt;&lt;span&gt;)&lt;/span&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fontColor=#FFFFFF;fillColor=#333333;" parent="1" vertex="1">
+                    <mxGeometry x="710" y="210" width="230" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="" style="endArrow=classic;html=1;fontColor=#FFFFFF;strokeColor=#FFFFFF;" parent="1" source="2" target="3" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="510" y="340" as="sourcePoint"/>
+                        <mxPoint x="560" y="290" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="7" value="" style="endArrow=classic;html=1;fontColor=#FFFFFF;strokeColor=#FFFFFF;" parent="1" source="3" target="4" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="510" y="260" as="sourcePoint"/>
+                        <mxPoint x="560" y="210" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="8" value="" style="endArrow=classic;html=1;fontColor=#FFFFFF;strokeColor=#FFFFFF;" parent="1" source="4" target="5" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="510" y="430" as="sourcePoint"/>
+                        <mxPoint x="560" y="380" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="9" value="Khởi tạo&lt;br&gt;(&lt;span style=&quot;background-color: rgb(30, 30, 30); font-family: consolas, &amp;quot;courier new&amp;quot;, monospace; font-size: 14px;&quot;&gt;VideoCapture&lt;/span&gt;&lt;span&gt;)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FFFFFF;fillColor=#333333;" parent="1" vertex="1">
+                    <mxGeometry x="712" y="350" width="228" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="endArrow=classic;html=1;fontColor=#FFFFFF;strokeColor=#FFFFFF;" parent="1" source="5" target="9" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="510" y="340" as="sourcePoint"/>
+                        <mxPoint x="560" y="290" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="11" value="Trích xuất ảnh từ camera" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FFFFFF;fillColor=#333333;" parent="1" vertex="1">
+                    <mxGeometry x="460" y="350" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="" style="endArrow=classic;html=1;fontColor=#FFFFFF;strokeColor=#FFFFFF;" parent="1" source="9" target="11" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="820" y="330" as="sourcePoint"/>
+                        <mxPoint x="870" y="280" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="13" value="Phát hiện toàn bộ khuôn mặt có trong ảnh&lt;br&gt;(&lt;span style=&quot;font-family: consolas, &amp;quot;courier new&amp;quot;, monospace; font-size: 14px;&quot;&gt;faceDetector&lt;/span&gt;&lt;span style=&quot;background-color: rgb(30, 30, 30); font-family: consolas, &amp;quot;courier new&amp;quot;, monospace; font-size: 14px;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;font-family: consolas, &amp;quot;courier new&amp;quot;, monospace; font-size: 14px;&quot;&gt;detect&lt;/span&gt;&lt;span&gt;)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FFFFFF;fillColor=#333333;" parent="1" vertex="1">
+                    <mxGeometry x="140" y="350" width="240" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="" style="endArrow=classic;html=1;fontColor=#FFFFFF;strokeColor=#FFFFFF;" parent="1" source="11" target="13" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="490" y="320" as="sourcePoint"/>
+                        <mxPoint x="540" y="270" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="15" value="Gọi hàm dự đoán.&lt;br&gt;(&lt;span style=&quot;font-family: consolas, &amp;quot;courier new&amp;quot;, monospace; font-size: 14px;&quot;&gt;maskPredictor&lt;/span&gt;&lt;span style=&quot;background-color: rgb(30, 30, 30); font-family: consolas, &amp;quot;courier new&amp;quot;, monospace; font-size: 14px;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;font-family: consolas, &amp;quot;courier new&amp;quot;, monospace; font-size: 14px;&quot;&gt;predict&lt;/span&gt;&lt;span&gt;)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FFFFFF;fillColor=#333333;" parent="1" vertex="1">
+                    <mxGeometry x="140" y="520" width="240" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="Vẽ các dự đoán&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FFFFFF;fillColor=#333333;" parent="1" vertex="1">
+                    <mxGeometry x="145" y="1060" width="230" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="" style="endArrow=classic;html=1;fontColor=#FFFFFF;strokeColor=#FFFFFF;" parent="1" source="13" target="15" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="470" y="620" as="sourcePoint"/>
+                        <mxPoint x="570" y="620" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="19" value="danh sách các vị trí có&lt;br&gt;khuôn mặt trong ảnh" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontColor=#FFFFFF;labelBackgroundColor=#1A1A1A;" parent="18" connectable="0" vertex="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="" style="endArrow=classic;html=1;fontColor=#FFFFFF;strokeColor=#FFFFFF;" parent="1" source="15" target="22" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="490" y="640" as="sourcePoint"/>
+                        <mxPoint x="540" y="590" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="21" value="xác suất có khẩu trang của&lt;br&gt;mỗi khuôn mặt có trong ảnh" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#FFFFFF;labelBackgroundColor=#1A1A1A;" parent="20" vertex="1" connectable="0">
+                    <mxGeometry x="-0.3249" y="-2" relative="1" as="geometry">
+                        <mxPoint x="2" y="13" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="22" value="Xác xuất có khẩu trang &amp;gt; 0.5&lt;br&gt;(&lt;span style=&quot;font-family: consolas, &amp;quot;courier new&amp;quot;, monospace; font-size: 14px;&quot;&gt;isWithoutMask&lt;/span&gt;&lt;span style=&quot;background-color: rgb(30, 30, 30); font-family: consolas, &amp;quot;courier new&amp;quot;, monospace; font-size: 14px;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;font-family: consolas, &amp;quot;courier new&amp;quot;, monospace; font-size: 14px;&quot;&gt;predict&lt;/span&gt;&lt;span style=&quot;background-color: rgb(30, 30, 30); font-family: consolas, &amp;quot;courier new&amp;quot;, monospace; font-size: 14px;&quot;&gt;)&lt;/span&gt;&lt;span&gt;)&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;fontColor=#FFFFFF;fillColor=#333333;" parent="1" vertex="1">
+                    <mxGeometry x="130" y="760" width="260" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="" style="endArrow=classic;html=1;fontColor=#FFFFFF;strokeColor=#FFFFFF;" parent="1" source="22" target="17" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="470" y="840" as="sourcePoint"/>
+                        <mxPoint x="570" y="840" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="25" value="Đúng" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontColor=#FFFFFF;labelBackgroundColor=#1A1A1A;" parent="24" connectable="0" vertex="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="nhắc nhở đeo khẩu trang&lt;br&gt;(&lt;span style=&quot;font-family: consolas, &amp;quot;courier new&amp;quot;, monospace; font-size: 14px;&quot;&gt;audioPlayer&lt;/span&gt;&lt;span style=&quot;background-color: rgb(30, 30, 30); font-family: consolas, &amp;quot;courier new&amp;quot;, monospace; font-size: 14px;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;font-family: consolas, &amp;quot;courier new&amp;quot;, monospace; font-size: 14px;&quot;&gt;play&lt;/span&gt;&lt;span style=&quot;background-color: rgb(30, 30, 30); font-family: consolas, &amp;quot;courier new&amp;quot;, monospace; font-size: 14px;&quot;&gt;()&lt;/span&gt;&lt;span&gt;)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FFFFFF;fillColor=#333333;" parent="1" vertex="1">
+                    <mxGeometry x="510" y="780" width="210" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="Trình lưu ảnh sẵn sàng&lt;br&gt;(&lt;span style=&quot;font-family: consolas, &amp;quot;courier new&amp;quot;, monospace; font-size: 14px;&quot;&gt;saveImages&lt;/span&gt;&lt;span style=&quot;background-color: rgb(30, 30, 30); font-family: consolas, &amp;quot;courier new&amp;quot;, monospace; font-size: 14px;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;font-family: consolas, &amp;quot;courier new&amp;quot;, monospace; font-size: 14px;&quot;&gt;ready&lt;/span&gt;&lt;span&gt;)&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;fontColor=#FFFFFF;fillColor=#333333;" parent="1" vertex="1">
+                    <mxGeometry x="485" y="910" width="260" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="" style="endArrow=classic;html=1;fontColor=#FFFFFF;strokeColor=#FFFFFF;" parent="1" source="22" target="27" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="480" y="870" as="sourcePoint"/>
+                        <mxPoint x="580" y="870" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="31" value="Sai" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontColor=#FFFFFF;labelBackgroundColor=#1A1A1A;" parent="30" connectable="0" vertex="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="Lưu ảnh&lt;br&gt;(&lt;span style=&quot;font-family: consolas, &amp;quot;courier new&amp;quot;, monospace; font-size: 14px;&quot;&gt;saveImages&lt;/span&gt;&lt;span style=&quot;background-color: rgb(30, 30, 30); font-family: consolas, &amp;quot;courier new&amp;quot;, monospace; font-size: 14px;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;font-family: consolas, &amp;quot;courier new&amp;quot;, monospace; font-size: 14px;&quot;&gt;save&lt;/span&gt;&lt;span&gt;)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FFFFFF;fillColor=#333333;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="1075" width="230" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="" style="endArrow=classic;html=1;fontColor=#FFFFFF;strokeColor=#FFFFFF;" parent="1" source="27" target="28" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="500" y="970" as="sourcePoint"/>
+                        <mxPoint x="550" y="920" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="36" value="" style="endArrow=classic;html=1;fontColor=#FFFFFF;strokeColor=#FFFFFF;" parent="1" source="28" target="32" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="470" y="1020" as="sourcePoint"/>
+                        <mxPoint x="570" y="1020" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="37" value="Đúng" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontColor=#FFFFFF;labelBackgroundColor=#1A1A1A;" parent="36" connectable="0" vertex="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="" style="endArrow=classic;html=1;fontColor=#FFFFFF;strokeColor=#FFFFFF;" parent="1" source="32" target="17" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="500" y="1040" as="sourcePoint"/>
+                        <mxPoint x="550" y="990" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="40" value="" style="endArrow=classic;html=1;fontColor=#FFFFFF;strokeColor=#FFFFFF;" parent="1" source="28" target="17" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="480" y="1020" as="sourcePoint"/>
+                        <mxPoint x="580" y="1020" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="410" y="950"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="41" value="Sai" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontColor=#FFFFFF;labelBackgroundColor=#1A1A1A;" parent="40" connectable="0" vertex="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="57" y="-28" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="42" value="FaceDetector" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#1ba1e2;fontColor=#FFFFFF;strokeColor=#006EAF;swimlaneFillColor=#1A1A1A;" parent="1" vertex="1">
+                    <mxGeometry x="1270" y="80" width="370" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="+ setMinAccuracy(val:float) =&gt; void&#10;+ loadFaceNetFromDir(dirCaffeDNN:str) =&gt; void&#10;+ detect(self, img:np) =&gt; detectResult:[acccuracy, box][]" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontColor=#FFFFFF;" parent="42" vertex="1">
+                    <mxGeometry y="30" width="370" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="MaskPredictor" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#1ba1e2;fontColor=#FFFFFF;strokeColor=#006EAF;swimlaneFillColor=#1A1A1A;" parent="1" vertex="1">
+                    <mxGeometry x="1270" y="260" width="370" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="+ loadModelFromFile(filePath:str)&#10;+ predict(img:np.ndarray, detectResult:tuple)" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontColor=#FFFFFF;" parent="44" vertex="1">
+                    <mxGeometry y="30" width="370" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=#1A1A1A;fontColor=#FFFFFF;fillColor=#333333;" vertex="1" parent="1">
+                    <mxGeometry x="-210" y="-100" width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;labelBackgroundColor=#1A1A1A;fontColor=#FFFFFF;fillColor=#333333;" vertex="1" parent="1">
+                    <mxGeometry x="1760" y="1340" width="60" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

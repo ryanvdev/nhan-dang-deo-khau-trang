@@ -1,0 +1,8 @@
+imgs/
+dataset/
+dataset_share/
+__pycache__/
+out/
+downloads/
+*.rar
+*.zip
